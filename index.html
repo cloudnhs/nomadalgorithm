@@ -14,31 +14,16 @@
       line-height: 1.8;
     }
     header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       padding: 1.5rem 2rem;
       background-color: #0a0a0a;
-      flex-wrap: wrap;
       border-bottom: 1px solid #111;
+      text-align: center;
     }
     .logo {
       font-size: 1.75rem;
       font-weight: 700;
       color: #00f2c3;
     }
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-    }
-    nav a {
-      text-decoration: none;
-      color: #bbb;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-    nav a:hover { color: #00f2c3; }
     .hero {
       text-align: center;
       padding: 5rem 2rem;
@@ -89,42 +74,48 @@
       border-top: 1px solid #111;
     }
     @media (max-width: 768px) {
-      .hero h1 { font-size: 2.2rem; }
-      .hero p { font-size: 1rem; }
-      header { flex-direction: column; align-items: flex-start; gap: 1rem; }
-      nav { flex-direction: column; gap: 0.75rem; }
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+      section {
+        padding: 2rem 1rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
 <body>
   <header>
     <div class="logo">Nomad Algorithm</div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#strategy">Strategy</a>
-      <a href="#tech">Technology</a>
-      <a href="#contact">Contact</a>
-    </nav>
   </header>
 
   <section class="hero">
     <h1>Code the chaos. Trade the world.</h1>
     <p>Adaptive Algorithms for Dynamic Markets</p>
-    <button class="cta-btn">Explore Strategies</button>
   </section>
 
-  <section id="about">
+  <section>
     <h2>About Us</h2>
-    <p>세상은 끊임없이 변하고, 시장은 한순간도 같지 않습니다.<br>
-    Nomad Algorithm은 그 변화 속에 머물지 않고 움직입니다.<br>
-    우리는 고정된 전략이 아닌, 변화에 반응하고 진화하는 트레이딩 시스템을 만듭니다.<br>
-    그것이 우리가 믿는 생존의 방식입니다.<br>
-    <strong style="color:#00f2c3">떠돌아야 살아남는다.</strong>
+    <p>
+      세상은 끊임없이 변하고, 시장은 한순간도 같지 않습니다.<br>
+      Nomad Algorithm은 그 변화 속에 머물지 않고 움직입니다.<br>
+      우리는 고정된 전략이 아닌, 변화에 반응하고 진화하는 트레이딩 시스템을 만듭니다.<br>
+      그것이 우리가 믿는 생존의 방식입니다.<br>
+      <strong style="color:#00f2c3">떠돌아야 살아남는다.</strong>
     </p>
   </section>
 
   <footer>
-    &copy; 2025 Nomad Algorithm. All rights reserved.
+    &copy; 2025 Nomad Algorithm. All rights reserved.<br>
+    Contact: <a href="mailto:contact@nomadalgorithm.com" style="color: #00f2c3; text-decoration: none;">contact@nomadalgorithm.com</a>
   </footer>
 </body>
 </html>
