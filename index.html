@@ -14,23 +14,23 @@
       line-height: 1.8;
     }
     header {
-      padding: 1.5rem 2rem;
+      padding: 2rem 2rem 1rem;
       background-color: #0a0a0a;
       border-bottom: 1px solid #111;
       text-align: center;
     }
-    .logo {
-      font-size: 1.75rem;
-      font-weight: 700;
-      color: #00f2c3;
+    .logo-image {
+      max-width: 200px;
+      height: auto;
+      margin: 0 auto 1rem;
     }
     .hero {
       text-align: center;
-      padding: 5rem 2rem;
+      padding: 4rem 2rem;
       background: linear-gradient(to bottom, #0f0f0f, #000);
     }
     .hero h1 {
-      font-size: 2.75rem;
+      font-size: 2.5rem;
       color: #00f2c3;
       margin-bottom: 1rem;
     }
@@ -39,19 +39,8 @@
       color: #ccc;
       margin-bottom: 2rem;
     }
-    .cta-btn {
-      padding: 0.75rem 2rem;
-      background-color: #00f2c3;
-      color: #000;
-      border: none;
-      border-radius: 6px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    .cta-btn:hover { background-color: #00c9a7; }
     section {
-      padding: 4rem 2rem;
+      padding: 3rem 2rem;
       max-width: 960px;
       margin: 0 auto;
     }
@@ -59,11 +48,13 @@
       font-size: 2rem;
       margin-bottom: 1rem;
       color: #00f2c3;
+      text-align: center;
     }
     p {
       font-size: 1.1rem;
       color: #ccc;
       margin-bottom: 1.5rem;
+      text-align: center;
     }
     footer {
       text-align: center;
@@ -72,6 +63,13 @@
       background-color: #0a0a0a;
       font-size: 0.9rem;
       border-top: 1px solid #111;
+    }
+    a {
+      color: #00f2c3;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
     @media (max-width: 768px) {
       .hero h1 {
@@ -94,7 +92,7 @@
 </head>
 <body>
   <header>
-    <div class="logo">Nomad Algorithm</div>
+    <img class="logo-image" src="nomadalgorithm.png" alt="Nomad Algorithm Logo" />
   </header>
 
   <section class="hero">
@@ -115,7 +113,7 @@
 
   <footer>
     &copy; 2025 Nomad Algorithm. All rights reserved.<br>
-    Contact: <a href="mailto:contact@nomadalgorithm.com" style="color: #00f2c3; text-decoration: none;">contact@nomadalgorithm.com</a>
+    Contact: <a href="mailto:contact@nomadalgorithm.com">contact@nomadalgorithm.com</a>
   </footer>
 </body>
 </html>
